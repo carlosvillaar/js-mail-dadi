@@ -11,7 +11,7 @@ let mail = prompt(`Inserisci la tua email`)
 //Ogni volta che l'utente inserisce la mail viene aggiunta all'array
 mailGroup.push(mail)
 
-//verifica se l'utente stia inserendo effettivamente una mail (solitamente sono piu lunghe di 5 lettere), se la inserisce il codice risponde positivamente, al contrario dice di riprovare.
+//verifica se l'utente stia inserendo effettivamente una mail (solitamente sono piu lunghe di 5 lettere), se la inserisce il codice risponde positivamente e quindi si procede al gioco, al contrario dice di riprovare a fare il login per giocare.
 
 if (mail.length >= 5){
   console.log(mailGroup);
@@ -41,6 +41,7 @@ if (mail.length >= 5){
       message = `Pareggio! Ritenta, sarai piu fortunato`;
       console.log(message);
 }
+// Se il login non e' andato a buon fine riprova dato che non puoi giocare.
 
 } else if (mail.length <= 5){ 
   message = `Autenticazione non andata a buon fine, riprova!`;
