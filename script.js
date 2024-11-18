@@ -25,9 +25,9 @@ if (mail.length >= 5){
     let numberComputer = 0;
 
 // Randomizziamo i numeri delle variabili.
-    numberUser = Math.floor((Math.random()) * 6);
+    numberUser = Math.floor((Math.random() * 6) + 1 );
     console.log(`Il tuo numero è ` + numberUser + `.`);
-    numberComputer = Math.floor((Math.random()) * 6);
+    numberComputer = Math.floor((Math.random() * 6) + 1 );
     console.log(`Il numero del computer è ` + numberComputer + `.`);
 
 // Stabiliamo il vincitore, ossia chi ha fatto il numero piu' alto con il dado.
